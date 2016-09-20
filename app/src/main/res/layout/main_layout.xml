@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.hasna2.soccifillia.MapsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+             />
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/activity_maps" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="0dp"
+    android:orientation="vertical">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_data_bluetooth"
+        app:backgroundTint="@color/wallet_link_text_light"
+        android:layout_margin="0dp"
+         />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/position"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="0dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src= "@drawable/refresh"
+        app:backgroundTint="@color/accent_material_light"
+        android:layout_margin="0dp"
+        android:adjustViewBounds="false" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:id="@+id/sync"
+        android:src="@android:drawable/ic_popup_sync"
+        android:layout_gravity="center"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

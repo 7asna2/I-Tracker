@@ -1,0 +1,68 @@
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/map_layout"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:paddingLeft="16dp"
+    android:text="@string/app_name"
+    android:gravity="fill_vertical"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/white"
+    android:background="@android:color/holo_green_dark" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/fake1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/holo_green_dark"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/fake2"
+            android:adjustViewBounds="true"
+            android:background="@android:color/holo_green_dark"
+            />
+        </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9"
+    tools:context="com.example.hasna2.soccifillia.MapsActivity" >
+
+</fragment>
+
+
+</LinearLayout>
